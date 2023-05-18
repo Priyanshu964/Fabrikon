@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product-detail</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="website icon" type="png" href="./logo1.png">
+    <!-- icons  -->
+    <script src="https://kit.fontawesome.com/ad65ed6f9e.js" crossorigin="anonymous"></script>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Overpass&family=Pacifico&family=Poppins:wght@500&family=Tillana:wght@500&display=swap" rel="stylesheet">
+    <!-- swiperlink -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header>
+        <div class="navbar pad">
+            <img src="./logo.png" width="200px" alt="">
+            <nav >
+                <ul id="category">
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./men-page.html">MEN</a></li>
+                    <li><a href="./women-page.html">WOMEN</a> </li>
+                    <li><a href="#products">PRODUCTS</a></li>
+                    <li id="menu"><i class="fa-solid fa-bars"></i></li>
+                </ul>
+                <ul id="icon">
+                    <li id="cart"><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <aside class="aside-menu">
+        <ul id="category">
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./men-page.html">MEN</a></li>
+            <li><a href="./women-page.html">WOMEN</a> </li>
+            <li><a href="#products">PRODUCTS</a></li>
+        </ul>
+    </aside>
+    <!-- open cart -->
+    <div class="shoppingCart Poppins">
+        <h4>Cart</h4>
+        <ul class="buyItems">
+            <h4>Your Cart is Empty</h4>
+            <!-- <li>
+                <img src="img/m1.png" width="60px" alt="">
+                <div class="cart-item-text">
+                    <div class="item-name">
+                        <h5>Looney Tunes: Bugs Special</h5>
+                        <h5>&#8377 1199</h5>
+                        <div>
+                            <button>-</button>
+                            <small class="productCount">1</small>
+                            <button>+</button>
+                        </div>   
+                    </div>
+                </div>
+                <i class="fa-solid  fa-x"></i>
+            </li> -->
+        </ul>
+        <div class="total">
+            <button class="checkout">Check out</button>
+            <h4>Total <span id="total-price">0</span></h4>
+        </div>
+    </div>
+    <section class="product-details  p-100">
+        <div class="product-img">
+            <img src="./img/n2.png" alt="" id="large-img">
+            <div class="other-images">
+                <div class="small-img">
+                    <img src="./img/n2.png" alt="" class="small_img">
+                </div>
+                <div class="small-img">
+                    <img src="./img/p1.png" alt="" class="small_img">
+                </div>
+                <div class="small-img">
+                    <img src="./img/p2.png" alt="" class="small_img">
+                </div>
+                <div class="small-img">
+                    <img src="./img/p3.png" alt="" class="small_img">
+                </div>
+            </div>
+        </div>
+        <div class="product-detail">
+            <h1 class="Poppins ">Checks: Red and Beige</h1>
+            <span class="Dosis">Shirts</span>
+            <h4 class="Poppins ">&#8377 1499</h4>
+            <div class="size-select">
+                <span class="Dosis">Please select the size</span>
+                <select name="" id="" class="Dosis">
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                    <option>XL</option>
+                    <option>XXL</option>
+
+                </select>
+            </div>
+            <div class="item-count Poppins">
+                <button id="minus">-</button>
+                <label id="count">1</label>
+                <button id="plus">+</button>
+            </div> 
+            
+            <div class="buy-button">
+                <button class="btn ">Add to Cart</button>
+                <button>Buy Now</button>
+            </div>
+            <div class="social">
+                <span class="Dosis">share</span>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <div class="detail">
+                <h4 class="Poppins">Product Detail</h4>
+                <p class="Dosis">100% Cotton (Poplin)
+                    Machine Wash</p>
+            </div>
+        </div>
+    </section>
+    <section class="similar pad" id="products">
+        <h2 class="Poppins">Similar Products</h2>
+        <div class="mens Poppins">
+            <div class="card">
+                <img src="./img/m1.png" alt="">
+                <div class="card-text">
+                    <h4 class="productName">Looney Tunes: Squad</h4>
+                    <h5>Summer Shirts</h5>
+                    <div class="price">
+                        <h6> &#8377 <span class="productPrice">1199</span></h6>
+                        <button class="addToCart" data-product-id="1">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/m3.png" alt="">
+                <div class="card-text">
+                    <h4 class="productName">Garfield: Made To Lounge</h4>
+                    <h5>Summer Shirts </h5>
+                    <div class="price">
+                        <h6> &#8377 <span class="productPrice">1199</span></h6>
+                        <button class="addToCart" data-product-id="2">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/n5.png" alt="">
+                <div class="card-text">
+                    <h4 class="productName">Looney Tunes: Bugs Special</h4>
+                    <h5>Men Oversized Hoodies</h5>
+                    <div class="price">
+                        <h6> &#8377 <span class="productPrice">1599</span></h6>
+                        <button class="addToCart" data-product-id="3">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/t3.png" alt="">
+                <div class="card-text">
+                    <h4 class="productName">Popeye: Bring Em On</h4>
+                    <h5>-Oversized T-Shirts</h5>
+                    <div class="price">
+                        <h6> &#8377 <span class="productPrice">999</span></h6>
+                        <button class="addToCart" data-product-id="4">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        // changing the img in product detail
+        const main_img = document.getElementById('large-img');
+        const small_img = document.getElementsByClassName('small_img');
+
+
+        small_img[0].onclick = function () {
+            main_img.src = small_img[0].src;
+        }
+        small_img[1].onclick = function () {
+            main_img.src = small_img[1].src;
+        }
+        small_img[2].onclick = function () {
+            main_img.src = small_img[2].src;
+        }
+        small_img[3].onclick = function () {
+            main_img.src = small_img[3].src;
+        }
+        //   open menu
+        const menu = document.getElementById('menu');
+        menu.addEventListener('click', (e) => {
+            e.preventDefault();
+            document.querySelector('.aside-menu').classList.toggle('active');
+        })
+        //item-count
+        const minus=document.getElementById('minus');
+        const plus=document.getElementById('plus');
+        const count_num=document.getElementById('count');
+        let contNum=1;
+        minus.addEventListener('click',()=>{
+          if(contNum<=1){
+            return;
+          }else{
+
+              contNum-=1;
+              count_num.innerHTML=contNum;
+          }
+        })
+        plus.addEventListener('click',()=>{
+          contNum++;
+          count_num.innerHTML=contNum;
+        })
+        
+    </script>
+    <script src="./shoppingCart.js"></script>
+</body>
+
+</html>
