@@ -5,6 +5,11 @@ cart.addEventListener('click', (e) => {
     e.preventDefault();
     shoppingCart.classList.toggle('active');
 })
+// preloader
+var preloader=document.getElementById('preloader');
+window.addEventListener('load',()=>{
+  preloader.style.display='none';
+})
 
 //---------------------------------closing cart---------------------------------------------------------------------------
 
