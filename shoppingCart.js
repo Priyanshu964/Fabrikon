@@ -1,19 +1,26 @@
-// -----------------------------------open-close cart-----------------------------------------------------------------------------------------
 const cart = document.getElementById('cart');
 let shoppingCart = document.querySelector('.shoppingCart')
 cart.addEventListener('click', (e) => {
     e.preventDefault();
     shoppingCart.classList.toggle('active');
+    document.querySelector('.aside-menu').classList.remove('active');
 })
-// preloader
-var preloader=document.getElementById('preloader');
-window.addEventListener('load',()=>{
-  preloader.style.display='none';
+//------------------------------------- Open menu-------------------------------------------------------------------------
+const menu = document.getElementById('menu');
+menu.addEventListener('click', (e) => {
+  e.preventDefault();
+  document.querySelector('.aside-menu').classList.toggle('active');
+  shoppingCart.classList.remove('active');
 })
-
-//---------------------------------closing cart---------------------------------------------------------------------------
-
-
+// --------------------------------change color of nav bar------------------------------------------------------------------
+document.addEventListener('scroll',()=>{
+    const navbar= document.querySelector('.navbar');
+    if(window.scrollY>0){
+        navbar.classList.add('scrolled')
+    }else{
+        navbar.classList.remove('scrolled')
+    }
+})
 // -----------------------------------Adding item in cart---------------------------------------------------------------------
 
 let productCart = JSON.parse(localStorage.getItem('shoppingCart'));
