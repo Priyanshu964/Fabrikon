@@ -32,13 +32,7 @@ var swiper1 = new Swiper(".mySwiper1", {
     }
   }
 });
-//  menu bar slider
 
-const menu = document.getElementById('menu');
-menu.addEventListener('click', (e) => {
-  e.preventDefault();
-  document.querySelector('.aside-menu').classList.toggle('active');
-})
 
 
 
