@@ -19,8 +19,7 @@
 </head>
 
 <body>
-     <div id="preloader"></div>
-    <header>
+     <header>
         <div class="navbar pad">
             <img src="./logo.png" width="200px" alt="">
             <nav >
@@ -195,13 +194,7 @@
         small_img[3].onclick = function () {
             main_img.src = small_img[3].src;
         }
-        //   open menu
-        const menu = document.getElementById('menu');
-        menu.addEventListener('click', (e) => {
-            e.preventDefault();
-            document.querySelector('.aside-menu').classList.toggle('active');
-        })
-        //item-count
+         //item-count
         const minus=document.getElementById('minus');
         const plus=document.getElementById('plus');
         const count_num=document.getElementById('count');
